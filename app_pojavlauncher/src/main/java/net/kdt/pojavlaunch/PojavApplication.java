@@ -38,7 +38,7 @@ public class PojavApplication extends Application {
 				// Write to file, since some devices may not able to show error
 				FileUtils.ensureParentDirectory(crashFile);
 				PrintStream crashStream = new PrintStream(crashFile);
-				crashStream.append("PojavLauncher crash report\n");
+				crashStream.append("Pojav Glow·Worm crash report\n");
 				crashStream.append(" - Time: ").append(DateFormat.getDateTimeInstance().format(new Date())).append("\n");
 				crashStream.append(" - Device: ").append(Build.PRODUCT).append(" ").append(Build.MODEL).append("\n");
 				crashStream.append(" - Android version: ").append(Build.VERSION.RELEASE).append("\n");
@@ -50,7 +50,6 @@ public class PojavApplication extends Application {
 				Log.e(CRASH_REPORT_TAG, " - Exception attempt saving crash stack trace:", throwable);
 				Log.e(CRASH_REPORT_TAG, " - The crash stack trace was:", th);
 			}
-
 			FatalErrorActivity.showError(PojavApplication.this, crashFile.getAbsolutePath(), storagePermAllowed, th);
 			MainActivity.fullyExit();
 		});
@@ -71,6 +70,7 @@ public class PojavApplication extends Application {
 												.concat("/x86");
 			}
 			AsyncAssetManager.unpackRuntime(getAssets());
+			AsyncAssetManager.unpackRuntime11(getAssets());
 		} catch (Throwable throwable) {
 			Intent ferrorIntent = new Intent(this, FatalErrorActivity.class);
 			ferrorIntent.putExtra("throwable", throwable);

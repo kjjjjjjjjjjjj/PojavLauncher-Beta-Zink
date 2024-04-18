@@ -53,7 +53,7 @@ If you want to build from source code, follow the steps below.
 ### Java Runtime Environment (JRE)
 - JRE for Android is [here](https://github.com/Vera-Firefly/android-openjdk-build)
 - Follow build instruction on build script [README.md](https://github.com/Vera-Firefly/android-openjdk-build/blob/buildjre8/README.md).
-- You can also get [CI auto builds](https://github.com/Vera-Firefly/android-openjdk-build/actions) if you are lazy or are failing to build it for some reason.
+- You can also get [CI auto builds](https://github.com/Vera-Firefly/android-openjdk-autobuild/actions) if you are lazy or are failing to build it for some reason.
 * Either get the `jre8-pojav` artifact from auto builds, or split all artifacts by yourself:</br>
    - Get JREs for all of 4 supported architectures (arm, arm64, x86, x86_64) </br> 
       - Split JRE into parts:</br>
@@ -111,6 +111,7 @@ Then, run these commands ~~or build using Android Studio~~.
 - [x] Game surface zooming.
 - [x] New input pipe rewritten to native code to boost performance.
 - [x] Rewritten entire controls system (thanks to @Mathias-Boulay)
+- [ ] Virtual terminal system
 - [ ] More to come!
 
 ## Known Issues
@@ -140,6 +141,8 @@ Any code change to this repository should be submitted as a pull request. The de
 - [xHook](https://github.com/iqiyi/xHook) (Used for exit code trapping): [MIT and BSD-style licenses](https://github.com/iqiyi/xHook/blob/master/LICENSE).
 - [libepoxy](https://github.com/anholt/libepoxy): [MIT License](https://github.com/anholt/libepoxy/blob/master/COPYING).
 - [virglrenderer](https://github.com/PojavLauncherTeam/virglrenderer): [MIT License](https://gitlab.freedesktop.org/virgl/virglrenderer/-/blob/master/COPYING).
+- [terminal-view](https://github.com/termux/termux-app/tree/master/terminal-view): [Apache 2.0](https://github.com/termux/termux-app/blob/master/LICENSE.md).
+- [terminal-emulator](https://github.com/termux/termux-app/tree/master/terminal-emulator): [Apache 2.0](https://github.com/termux/termux-app/blob/master/LICENSE.md).
 - Thanks to [MCHeads](https://mc-heads.net) for providing Minecraft avatars.
 
 ## More

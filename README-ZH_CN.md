@@ -55,7 +55,7 @@
 ### Java运行时环境(JRE)
 - 适用于Android的JRE[这里](https://github.com/Vera-Firefly/android-openjdk-build)
 - 遵循构建脚本上的构建说明[README.md](https://github.com/Vera-Firefly/android-openjdk-build/blob/buildjre8/README.md).
-- 如果你懒惰或者出于某种原因,你还可以从[自动构建](https://github.com/Vera-Firefly/android-openjdk-build/actions)获取它
+- 如果你懒惰或者出于某种原因,你还可以从[自动构建](https://github.com/Vera-Firefly/android-openjdk-autobuild/actions)获取它
 * 要么获取 `jre8-pojav` 的移动构建文件, 或自己拆分所有工作流:</br>
    - 获取4种受支持的处理器架构(arm, arm64, x86, x86_64) </br> 
       - 将JRE拆分为以下几个部分:</br>
@@ -113,6 +113,7 @@ scripts\languagelist_updater.bat
 - [x] 游戏分辨率缩放
 - [x] 新的输入管道重写为本机代码,以提高性能
 - [x] 重写了整个操作方式(感谢@Mathias-Boulay)
+- [ ] 半完整的虚拟终端系统
 - [ ] 还有更多到来!
 
 ## 了解出现的问题
@@ -141,6 +142,8 @@ scripts\languagelist_updater.bat
 - [xHook](https://github.com/iqiyi/xHook) (用于退出代码处理): [MIT and BSD-style licenses](https://github.com/iqiyi/xHook/blob/master/LICENSE).
 - [libepoxy](https://github.com/anholt/libepoxy): [MIT License](https://github.com/anholt/libepoxy/blob/master/COPYING).
 - [virglrenderer](https://github.com/PojavLauncherTeam/virglrenderer): [MIT License](https://gitlab.freedesktop.org/virgl/virglrenderer/-/blob/master/COPYING).
+- [terminal-view](https://github.com/termux/termux-app/tree/master/terminal-view): [Apache 2.0](https://github.com/termux/termux-app/blob/master/LICENSE.md).
+- [terminal-emulator](https://github.com/termux/termux-app/tree/master/terminal-emulator): [Apache 2.0](https://github.com/termux/termux-app/blob/master/LICENSE.md).
 - 感谢[MCHeads](https://mc-heads.net)提供Minecraft头像组件
 
 ## 更多

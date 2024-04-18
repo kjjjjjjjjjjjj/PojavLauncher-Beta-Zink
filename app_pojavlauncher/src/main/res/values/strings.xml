@@ -150,7 +150,8 @@
 
     <string name="customctrl_selectdefault">Select default controlmap</string>
     <string name="customctrl_export">Export controlmap</string>
-
+    
+    <string name="main_terminal">Terminal</string>
     <string name="main_share_logs">Share log file</string>
     <string name="main_install_jar_file">Execute a .jar</string>
     <string name="main_play">Play</string>
@@ -375,6 +376,11 @@
     <string name="cropper_lock_horizontal">H. lock</string>
     <string name="cropper_reset">Reset</string>
     <string name="cropper_select_cancelled">Selection cancelled</string>
+    <string name="log_view_button_scroll_off">Autoscroll\nOFF</string>
+    <string name="log_view_button_scroll_on">Autoscroll\nON</string>
+    <string name="log_view_button_output_off">Output\nOFF</string>
+    <string name="log_view_button_output_on">Output\nON</string>
+    <string name="log_view_label_log_output">Log output:</string>
 
     <!-- App New Annotation -->
     <string name="preference_category_visibility_title">Visibility</string>
@@ -400,7 +406,6 @@
     <string name="microsoft_login_fragment">Login started!</string>
     <string name="preference_zink_crash_handle_title">Standby Bridge</string>
     <string name="preference_zink_crash_handle">Use the second scheme bridge,close if launch failed</string>
-    <string name="control_view_logout">Log output:</string>
     <!-- Other login -->
     <string name="other_login_api">Other Login</string>
     <string name="other_login_authentication_server">Authentication server</string>
@@ -428,7 +433,7 @@
     <string name="preference_exp_framebuffer_title">Spare frame buffer</string>
     <string name="preference_exp_framebuffer">Use the frame buffer of the second scheme, close it if launch failed</string>
     <string name="preference_renderer_setup_extra">Renderer (Extra)</string>
-    <string name="preference_renderer_extra_default">Mesa24.0.4 (Default)</string>
+    <string name="preference_renderer_extra_default">Mesa24.0.5 (Default)</string>
     <string name="preference_extra_mesa_version">Mesa Version</string>
     <string name="preference_extra_driver_modle">Driver Modle</string>
     <!-- Dialog box prompt -->

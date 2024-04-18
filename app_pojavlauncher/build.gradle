@@ -104,8 +104,8 @@ android {
 
     defaultConfig {
         applicationId "net.kdt.pojavlaunch.firefly"
-        minSdkVersion 23
-        targetSdkVersion 34
+        minSdkVersion 24
+        targetSdkVersion 28
         versionCode getDateSeconds()
         versionName getVersionName()
         multiDexEnabled true //important
@@ -144,7 +144,7 @@ android {
         variant.mergeAssetsProvider.get().doLast {
             def arch = System.getProperty("arch", "all")
             def assetsDir = mergeAssetsProvider.get().outputDir.get()
-            def java = ['jre', 'jre-new']
+            def java = ['jre-8', 'jre-11', 'jre-17', 'jre-21']
             println(arch)
             java.forEach { String str ->
                 def runtimeDir = new File([assetsDir, "components/" + str].join(File.separator))
@@ -249,6 +249,7 @@ dependencies {
     // implementation 'net.sourceforge.streamsupport:streamsupport-cfuture:1.7.0'
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.aar'])
     
     implementation 'com.squareup.okhttp3:okhttp:3.9.1'
 }
