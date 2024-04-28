@@ -70,7 +70,6 @@ jobs:
           gradle :app_pojavlauncher:assembleDebug -Darch=${{matrix.arch}}
 
       - name: Upload Release
-        continue-on-error: true
         if: github.repository_owner == 'Vera-Firefly' && github.ref_name == 'exp_v3'
         uses: actions/upload-artifact@v4
         with:
